@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <link
-        href='https://fonts.googleapis.com/css?family=Lato:300,400,700'
-        rel='stylesheet'>
+        rel='stylesheet'
+        href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
     <link
         rel="stylesheet"
-        href="style.css"
-        MEDIA="screen"
-        charset="utf-8">
+        href="style.css">
   </head>
   <body>
     <div class="aaa">
-      <img src="./eisenhower-matrix.jpg">
+      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       <a
           class='more_inf'
           href="https://goal-life.com/page/method/matrix-eisenhower">
@@ -27,7 +25,7 @@
       <p id='topSectionForAddingElementToList'>
         <label for="new-task">Add Item</label>
         <div class="task-row-wrapper">
-          <input id='new-task'class="task" type="text">
+          <input class="task" id='new-task' type="text">
           <button>Add</button>
         </div>
       </p>
@@ -36,7 +34,7 @@
         <li>
           <input type='checkbox'>
           <label class="task">Pay Bills</label>
-          <input type="text" class="task">
+          <input class="task" type="text">
           <button class="edit">Edit</button>
           <button class="delete">
             <img src="./remove.svg" alt="remove">
@@ -45,7 +43,7 @@
         <li class="editMode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
+          <input class="task" type="text" value="Go Shopping">
           <button class='edit'>Save</button>
           <button class="delete">
             <img src="./remove.svg" alt="remove">
@@ -57,7 +55,7 @@
         <li>
           <input type="checkbox" checked>
           <label class="task">See the Doctor</label>
-          <input type="text" class="task">
+          <input class="task" type="text">
           <button class="edit">Edit</button>
           <button class="delete">
             <img src="./remove.svg" alt="remove">
@@ -65,6 +63,6 @@
         </li>
       </ul>
     </div>
-    <script SRC="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
