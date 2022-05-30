@@ -45,13 +45,17 @@
 }
 
 .input,
-.button_action,
-.button_delete {
+.button_action_save,
+.button_action_edit,
+.button_action_add,
+.button_action_delete {
   outline: none;
 }
 
-.button_action,
-.button_delete {
+.button_action_save,
+.button_action_edit,
+.button_action_add,
+.button_action_delete {
   background: none;
   border: 0px;
   color: #888;
@@ -61,7 +65,9 @@
   cursor: pointer;
 }
 
-.button_action:hover {
+.button_action_save:hover,
+.button_action_edit:hover,
+.button_action_add:hover {
   color: #3a3A3a;
 }
 
@@ -110,7 +116,7 @@
 }
 
 /* Task list */
-.todo-list__item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -134,17 +140,18 @@
   width: 226px;
 }
 
-/* .input_task {
-  width: 226px;
-} */
+.input_task,
+.label {
+  width: 350px;
+}
 
-.button_delete img {
+.button_action_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button_delete img:hover {
+.button_action_delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -164,6 +171,10 @@
   width: 224px;
 }
 
+/* .label {
+  display: none;
+} */
+
 .label_edit-mode {
-display: none;
+  display: none;
 }
