@@ -19,7 +19,7 @@ var createNewTaskElement = function (taskString) {
   let listItem = document.createElement("li");
   listItem.className = "list__item";
   let checkBox = '<input class="checkbox" type="checkbox">';
-  let label = '<label class="label" for="task"></label>';
+  // let label = `<label class="label" for="task"></label>`;
   let editInput = '<input class="input input_task" id="task" type="text">';
   let editButton = '<button class="button button_action_edit">Edit</button>';
   let deleteButton = '<button class="button button_action_delete"><img class="button-img" src="./remove.svg" alt="remove"></button>';
@@ -29,7 +29,7 @@ var createNewTaskElement = function (taskString) {
     // //input (checkbox)
     // var checkBox=document.createElement("input");//checkbx
     // //label
-    // var label=document.createElement("label");//label
+    var label=document.createElement("label");//label
     // //input (text)
     // var editInput=document.createElement("input");//text
     // //button.edit
@@ -39,8 +39,8 @@ var createNewTaskElement = function (taskString) {
     // var deleteButton=document.createElement("button");//delete button
     // var deleteButtonImg=document.createElement("img");//delete button image
 
-    // label.innerText=taskString;
-    // label.className='label';
+    label.innerText=taskString;
+    label.className='label';
 
     // //Each elements, needs appending
     // checkBox.type="checkbox";
@@ -57,7 +57,7 @@ var createNewTaskElement = function (taskString) {
 
     //and appending.
     listItem.insertAdjacentHTML("beforeend", checkBox);
-    listItem.insertAdjacentHTML("beforeend", label);
+    listItem.insertAdjacentElement("beforeend", label);
     listItem.insertAdjacentHTML("beforeend", editInput);
     listItem.insertAdjacentHTML("beforeend", editButton);
     listItem.insertAdjacentHTML("beforeend", deleteButton);
@@ -76,7 +76,7 @@ var addTask=function(){
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
 
-    taskInput.value="";
+    taskInput.value=""; //clear input line after adding a new task
 
 }
 
@@ -99,7 +99,7 @@ var editTask=function(){
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText=editInput.value;
-        editBtn.innerText="Edit";
+        editBtn.innerText = "Edit";
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
