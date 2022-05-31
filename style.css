@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .preview {
     text-align: center;
@@ -124,10 +124,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
-/* li > * {
-  vertical-align: middle;
-} */
 
 .checkbox {
   margin: 0 10px;
