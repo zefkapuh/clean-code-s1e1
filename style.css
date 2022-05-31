@@ -40,7 +40,7 @@
   padding: 0px;
 }
 
-.list li {
+.list__item {
   list-style: none;
 }
 
@@ -141,13 +141,13 @@
   width: 350px;
 }
 
-.button_action_delete img {
+.button-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button_action_delete img:hover {
+.button-img:hover {
   transform: rotateZ(0);
 }
 
